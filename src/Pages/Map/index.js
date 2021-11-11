@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import Header from '../../components/Header';
 
 import {MapContainer,TileLayer, Marker, Popup } from 'react-leaflet';
     const COMPANIES = [
@@ -27,23 +28,27 @@ import {MapContainer,TileLayer, Marker, Popup } from 'react-leaflet';
 
 const Map = () => {
     return(
-        <div className='container-map'>
-        <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={true}>
-        <TileLayer
-            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        {
-            COMPANIES.map(item => (
-            <Marker position={item.coordinates}>
-                <Popup>
-                <p>Nome: {item.name}</p>
-                </Popup>
-            </Marker>
-            ))
-        }
-        </MapContainer>
-        </div>
+        <>
+            <Header/>
+
+            <div className='container-map'>
+            <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={true}>
+            <TileLayer
+                attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            {
+                COMPANIES.map(item => (
+                <Marker position={item.coordinates}>
+                    <Popup>
+                    <p>Nome: {item.name}</p>
+                    </Popup>
+                </Marker>
+                ))
+            }
+            </MapContainer>
+            </div>
+        </>
     );
 };
 

@@ -2,11 +2,11 @@ import React from "react";
 import './style.css';
 import PropTypes from 'prop-types';
 
-const SubHeader = ({title}) => {
+const SubHeader = ({title, children}) => {
     return(
         <section className='subheader-container'>
             <h1 className='subheader-title'>{title}</h1>
-            {/*{children}*/}
+            {children}
         </section>
     );
 };
