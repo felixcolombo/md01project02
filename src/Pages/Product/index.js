@@ -5,13 +5,13 @@ import './style.css';
 
 const Product = () => {
     return (
-        <>
+        <div className='content-product'>
+            
             <Header/>
+                        
+            <FormProduct/>
 
-            <div className='content-product'>            
-                <FormProduct/>
-            </div>
-        </>
+        </div>
     )
 }
 
