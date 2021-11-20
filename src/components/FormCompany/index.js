@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import SubHeader from '../SubHeader';
-import './style.css';
+//import './style.css';
 
 
 const FormCompany = (props) => {

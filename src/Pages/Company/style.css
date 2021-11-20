@@ -1,4 +1,7 @@
-.header-container{
-    display: flex;
-    justify-content: row;
+.content-company{
+    border: 1px solid black;
+    width: 600px;
+    height: 700px;
+    margin: auto;
+        
 }

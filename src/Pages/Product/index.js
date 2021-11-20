@@ -8,8 +8,9 @@ const Product = () => {
         <>
             <Header/>
 
-                        
-            <FormProduct/>
+            <div className='content-product'>            
+                <FormProduct/>
+            </div>
         </>
     )
 }

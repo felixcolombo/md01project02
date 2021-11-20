@@ -92,7 +92,7 @@
     border-radius: 5px;
 }
 
-.btn{
+.btn-login{
     border-radius: 5px;
     border: 1px solid black;
     height: 35px;
@@ -102,7 +102,7 @@
     color: black;
 }
 
-.btn:hover{
+.btn-login:hover{
     transform: scale(1.02);
     transition: all 0.2s;
    

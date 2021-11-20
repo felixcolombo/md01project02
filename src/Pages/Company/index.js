@@ -8,8 +8,11 @@ const Company = () => {
         <>
             <Header/>
 
-            
-            <FormCompany/>
+            <div className='content-company'>
+                       
+                <FormCompany/>
+
+            </div>
         </>
     )
 }

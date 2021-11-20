@@ -98,7 +98,7 @@ const FormLogin = () => {
                         <div className='container-error'>{errorPassword}</div>
                     )}
                 
-                <input className='btn' type="submit" value="Entrar"/>
+                <input className='btn-login' type="submit" value="Entrar"/>
 
             </form>
         </div>
