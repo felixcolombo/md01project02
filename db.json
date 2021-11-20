@@ -16,104 +16,18 @@
   "profile": {
     "name": "typicode"
   },
-  "produtos": [],
-  "empresas": [
+  "produtos": [
     {
-      "corporateName": "xczx",
+      "url": "ww",
+      "productName": "ww",
+      "unitCost": "22",
+      "description": "232",
+      "provider": "Del valle",
+      "group": "Ovos",
       "id": 1
-    },
-    {
-      "corporateName": "sds",
-      "id": 2
-    },
-    {
-      "corporateName": "sds",
-      "id": 3
-    },
-    {
-      "corporateName": "sdfsdaf",
-      "id": 4
-    },
-    {
-      "corporateName": "sdfsdaf",
-      "id": 5
-    },
-    {
-      "corporateName": "sa",
-      "tradeName": "ds",
-      "cnpj": "33",
-      "email": "a@a.com",
-      "cep": "33",
-      "address": "sdfsd",
-      "number": "3",
-      "district": "we",
-      "city": "wew",
-      "complement": "",
-      "latitude": "44",
-      "longitude": "55",
-      "id": 6
-    },
-    {
-      "corporateName": "dsf",
-      "tradeName": "Sarah Olivo",
-      "cnpj": "345",
-      "email": "arqsaraholivo@gmail.com",
-      "cep": "88811-710",
-      "address": "Rua Independência",
-      "number": "334",
-      "district": "fdggd",
-      "city": "Criciúma",
-      "complement": "534534",
-      "latitude": "55",
-      "longitude": "55",
-      "id": 7
-    },
-    {
-      "corporateName": "dsf",
-      "tradeName": "Sarah Olivo",
-      "cnpj": "345",
-      "email": "arqsaraholivo@gmail.com",
-      "cep": "88811-710",
-      "address": "Rua Independência",
-      "number": "334",
-      "district": "fdggd",
-      "city": "Criciúma",
-      "complement": "",
-      "latitude": "55",
-      "longitude": "55",
-      "id": 8
-    },
-    {
-      "corporateName": "dsf",
-      "tradeName": "Sarah Olivo",
-      "cnpj": "345",
-      "email": "arqsaraholivo@gmail.com",
-      "cep": "88811-710",
-      "address": "Rua Independência",
-      "number": "334",
-      "district": "fdggd",
-      "city": "Criciúma",
-      "complement": "",
-      "latitude": "55",
-      "longitude": "55",
-      "id": 9
-    },
-    {
-      "corporateName": "qq",
-      "tradeName": "Sarah Olivo",
-      "cnpj": "gdfg",
-      "email": "arqsaraholivo@gmail.com",
-      "cep": "88811-710",
-      "address": "Rua Independência",
-      "number": "334",
-      "district": "sds",
-      "city": "Criciúma",
-      "complement": "",
-      "latitude": "66",
-      "longitude": "66",
-      "id": 10
     }
   ],
+  "empresas": [],
   "fornecedores": [
     "Del valle",
     "Amazon",

@@ -1,18 +1,18 @@
 import React from 'react';
 import Header from '../../components/Header';
-import FormCompany from '../../components/FormCompany';
+import FormProduct from '../../components/FormProduct';
 import './style.css';
 
-const Company = () => {
+const Product = () => {
     return (
         <>
             <Header/>
 
-            
-            <FormCompany/>
+                        
+            <FormProduct/>
         </>
     )
 }
 
 
-export default Company;
+export default Product;

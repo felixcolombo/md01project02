@@ -32,21 +32,21 @@ const Map = () => {
             <Header/>
 
             <div className='container-map'>
-            <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={true}>
-            <TileLayer
-                attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
+                <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={true}>
+                <TileLayer
+                    attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
             {
                 COMPANIES.map(item => (
                 <Marker position={item.coordinates}>
                     <Popup>
-                    <p>Nome: {item.name}</p>
+                        <p>Nome: {item.name}</p>
                     </Popup>
                 </Marker>
                 ))
             }
-            </MapContainer>
+                </MapContainer>
             </div>
         </>
     );

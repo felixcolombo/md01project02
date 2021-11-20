@@ -1,4 +1,14 @@
 .container-header{
     display: flex;
     align-content: row;
+    justify-content: left;
+    align-items: center;
 }
+
+.btn{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    
+}
+

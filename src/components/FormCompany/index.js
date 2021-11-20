@@ -1,5 +1,6 @@
 import {useState} from 'react';
-import SubHeader from '../../components/SubHeader';
+import SubHeader from '../SubHeader';
+import './style.css';
 
 
 const FormCompany = (props) => {
@@ -89,13 +90,13 @@ const FormCompany = (props) => {
                 }
             );
 
-            alert ('Empresa Cadastrada com Sucesso!');
+            alert ('Empresa cadastrada com Sucesso!');
             refreshPage();
 
             
 
         } catch (error) {
-            alert('Erro detectado!')
+            alert('Erro Detectado!')
         }
     }
 

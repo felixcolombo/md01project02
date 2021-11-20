@@ -1,19 +1,29 @@
 import Map from './Pages/Map';
 import Company from './Pages/Company';
+import Product from './Pages/Product';
+import Login from './Pages/Login';
+import StoreUser from './components/StoreUser';
+import RoutesPrivate from './components/RoutesPrivate';
 
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-const Router = () => {
+const PagesRoot = () => {
     return(
-        <BrowserRouter>
-            <Switch>
-                <Route path='/company' component={Company}/>
+        <Router>
+            <StoreUser>
+                <Switch>
+                    <Route exact path='/' component={Login}/>
 
-                <Route path='/map' component={Map}/>
+                    <RoutesPrivate path='/company' component={Company}/>
 
-            </Switch>
-        </BrowserRouter>
+                    <RoutesPrivate path='/map' component={Map}/>
+
+                    <RoutesPrivate path='/product' component={Product}/>
+                    
+                </Switch>
+            </StoreUser>
+        </Router>
     );
 };
 
-export default Router;
+export default PagesRoot;
