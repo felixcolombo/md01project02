@@ -1,0 +1,110 @@
+.content{
+    width: 400px;
+    color: rgb(9, 109, 112);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+
+}
+
+.form-content{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+     
+}
+
+.title-login{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.container-login {
+    display: flex;
+    align-content: center;
+    flex-flow: column;
+    justify-content: center;
+    align-items: left;
+    
+}
+
+.container-login label{
+    font-size: 20px;
+    margin-bottom: 1px;
+}
+
+.container-login input{
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 30px;
+    padding-left: 5px;
+    
+}
+
+.container-login input:focus{
+    outline: 0;
+    border-color: rgb(12, 64, 66);
+    background-color: rgb(224, 247, 247);
+}
+
+
+.container-password {
+    display: flex;
+    align-content: center;
+    flex-flow: column;
+    justify-content: center;
+    align-items: left;
+      
+}
+
+.container-password label{
+    font-size: 20px;
+    margin-bottom: 1px;
+    
+}
+
+.container-password input{
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 30px;
+    padding-left: 5px;
+    
+}
+
+.container-password input:focus{
+    outline: 0;
+    border-color: rgb(12, 64, 66);
+    background-color: rgb(224, 247, 247);
+}
+
+.container-error{
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    background-color: rgba(185, 147, 147, 0.952);
+    border-radius: 5px;
+}
+
+.btn{
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 35px;
+    width: 400px;
+    margin: auto;
+    font-size: 17px;
+    color: black;
+}
+
+.btn:hover{
+    transform: scale(1.02);
+    transition: all 0.2s;
+   
+}
+

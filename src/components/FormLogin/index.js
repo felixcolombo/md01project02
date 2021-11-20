@@ -14,18 +14,19 @@ function login ({user, password}) {
     if (user === 'Paripassu' && password ==='Involves') {
         return {key: 'DevInHouse'};
     } else if (user !== 'Paripassu' && password ==='Involves'){
-        return {error: 'Usuário Incorreto!'};
+        return {errorUser: 'Usuário Incorreto!'};
     } else if (user === 'Paripassu' && password !=='Involves'){
-        return {error: 'Senha Incorreta!'};
+        return {errorPassword: 'Senha Incorreta!'};
     } else if (user !== 'Paripassu' && password !=='Involves'){
-        return {error: 'Usuário e Senha Incorretos!'};
+        return {errorUser: 'Usuário Incorreto!', errorPassword: 'Senha Incorreta!'};
     }   
               
 }
 
 const FormLogin = () => {
     const [values, setValues] = useState(initialState);
-    const [error, setError] = useState(null);
+    const [errorUser, setErrorUser] = useState(null);
+    const [errorPassword, setErrorPassword] = useState(null);
     const {setKey} = useContext(StoreContext);
     const history = useHistory();
 
@@ -41,14 +42,15 @@ const FormLogin = () => {
     function onSubmit(event) {
         event.preventDefault();
 
-        const {key, error} = login(values);
+        const {key, errorPassword, errorUser} = login(values);
 
         if (key==='DevInHouse'){
             setKey('DevInHouse');
             return history.push('/company');
             
         } else {
-            setError(error);
+            setErrorUser(errorUser);
+            setErrorPassword(errorPassword);
             setValues(initialState);
         }
 
@@ -58,9 +60,10 @@ const FormLogin = () => {
     return (
         <div className='content'>
             
-            <form className='container-formlogin' onSubmit={onSubmit}>
-                <label>
-                    Login:
+            <h1 className='title-login'>Acesso SGI</h1>
+
+            <form className ='form-content' onSubmit={onSubmit}>
+                <div className= 'container-login'>
                     <input
                         id='user'
                         type='text'
@@ -68,10 +71,17 @@ const FormLogin = () => {
                         value={values.user}
                         onChange={onChange}
                     />
-                </label>
+                    <label>
+                        Login
+                    </label>
+                              
+                    {'user' !== 'Paripassu' && (
+                        <div className='container-error'>{errorUser}</div>
+                    )}
+                
+                </div>
 
-                <label>
-                    Senha:
+                <div className= 'container-password'>
                     <input
                         id='password'
                         type='password'
@@ -79,14 +89,16 @@ const FormLogin = () => {
                         value={values.password}
                         onChange={onChange}
                     />
-                </label>
-                <div>
-                    {error && (
-                        <div className='container-error'>{error}</div>
-                    )}
+                    <label>
+                        Senha
+                    </label>
                 </div>
+
+                {'password' !== 'Involves' && (
+                        <div className='container-error'>{errorPassword}</div>
+                    )}
                 
-                <input type="submit" value="Entrar"/>
+                <input className='btn' type="submit" value="Entrar"/>
 
             </form>
         </div>
