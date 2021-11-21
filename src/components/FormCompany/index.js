@@ -108,8 +108,9 @@ const FormCompany = (props) => {
 
                 <div className='container-formCompany'> 
 
-                    <label>
-                            Razão Social:
+                    <div className='container-name'>
+                        <div className='container-corporate'> 
+                            <label>Razão Social</label>
                             <input
                                 type='text'
                                 name="corporateName"
@@ -117,70 +118,71 @@ const FormCompany = (props) => {
                                 onChange={(e) => setCorporateName(e.target.value)}
                                 placeholder='Razão Social'
                             />
-                        </label>
-
-                        <label>
-                            Nome Fantasia:
+                        </div>
+                        
+                        <div className='container-trade'>
+                            <label>Nome Fantasia</label>
                             <input
                                 type='text'
                                 name='tradeName'
                                 value={tradeName}
                                 onChange={(e) => setTradeName(e.target.value)}
                                 placeholder='Nome Fantasia'
-                                
-                            />
-                        </label>
+                             />
+                        </div>
+                    </div>
 
-                        <label>
-                            CNPJ:
+                    <div className='container-cnpj-email'>
+                        <div className='container-cnpj'> 
+                            <label>CNPJ</label>
                             <input
                                 type='text'
                                 name="cnpj"
                                 value={cnpj}
                                 onChange={(e) => setCnpj(e.target.value)}
                                 placeholder='CNPJ'
-                                
                             />
-                        </label>
+                        </div>
 
-                        <label>
-                            E-mail:
+                        <div className='container-email'>
+                            <label>E-mail</label>
                             <input
                                 type='email'
                                 name="email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 placeholder='example@site.com'
-                                                    
                             />
-                        </label>
+                        </div>
+                    </div>
 
-                        <label>
-                            CEP:
+                    <div className='container-cep-address'>
+                        <div className='container-cep'>
+                            <label>CEP</label>
                             <input
                                 type='text'
-                            name="cep"
+                                name="cep"
                                 value={cep}
                                 onChange={(e) => setCep(e.target.value)}
                                 placeholder='CEP'
                                 
                             />
-                        </label>
-
-                        <label>
-                            Endereço:
+                        </div>
+                        <div className='container-address'>
+                            <label>Endereço</label>
                             <input
                                 type='text'
                                 name="address"
                                 value={address}
                                 onChange={(e) => setAddress(e.target.value)}
                                 placeholder='Endereço'
-                                
                             />
-                        </label>
+                        </div>
+                    </div>
 
-                        <label>
-                            Número:
+                    <div className='container-num-district-city'>
+                        <div className='container-num'>
+                            <label>Número</label>
                             <input
                                 type='number'
                                 name="number"
@@ -189,10 +191,9 @@ const FormCompany = (props) => {
                                 placeholder='Número'
                                 
                             />
-                        </label>
-
-                        <label>
-                            Bairro:
+                        </div>
+                        <div className='container-district'>
+                            <label>Bairro</label>
                             <input
                                 type='text'
                                 name="district"
@@ -201,22 +202,21 @@ const FormCompany = (props) => {
                                 placeholder='Bairro'
                                 
                             />
-                        </label>
-
-                        <label>
-                            Cidade:
+                        </div>
+                        <div className='container-city'>
+                            <label>Cidade</label>
                             <input
                                 type='text'
                                 name="city"
                                 value={city}
                                 onChange={(e) => setCity(e.target.value)}
                                 placeholder='Cidade'
-                                
                             />
-                        </label>
+                        </div>
+                    </div>
 
-                        <label>
-                            Complemento:
+                    <div className='container-complement'>
+                        <label>Complemento</label>
                             <input
                                 type='text'
                                 name="complement"
@@ -224,32 +224,30 @@ const FormCompany = (props) => {
                                 onChange={(e) => setComplement(e.target.value)}
                                 placeholder='Complemento'
                             />
-                        </label>
+                    </div>
 
-                        <label>
-                            Latitude:
+                    <div className='container-lat-long'>
+                        <div className='container-lat'>
+                            <label>Latitude</label>
                             <input
                                 type='number'
                                 name="latitude"
                                 value={latitude}
                                 onChange={(e) => setLatitude(e.target.value)}
                                 placeholder='Latitude'
-                                
                             />
-                        </label>
-
-                        <label>
-                            Longitude:
+                        </div>
+                        <div className='container-long'>
+                            <label>Longitude</label>
                             <input
                                 type='number'
                                 name="longitude"
                                 value={longitude}
                                 onChange={(e) => setLongitude(e.target.value)}
                                 placeholder='Longitude'
-                                
                             />
-                        </label>
-
+                        </div>
+                    </div>
                 </div>
             </form>
             

@@ -1,8 +1,9 @@
 .content-company{
     border: 2px solid rgb(109, 156, 152);
     width: 602px;
-    height: 800px;
+    height: 630px;
     margin: auto;
-
+    border-bottom: 5px solid rgb(109, 156, 152);
+    
 }
 

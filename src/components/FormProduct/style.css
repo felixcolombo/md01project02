@@ -1,7 +1,7 @@
 .container-formProduct{
     border: 1px solid rgb(170, 205, 206);
     width: 580px;
-    
+    margin: auto;
 }
 
 .img-Product{
