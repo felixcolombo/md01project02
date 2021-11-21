@@ -46,7 +46,7 @@ const FormLogin = () => {
 
         if (key==='DevInHouse'){
             setKey('DevInHouse');
-            return history.push('/company');
+            return history.push('/map');
             
         } else {
             setErrorUser(errorUser);
