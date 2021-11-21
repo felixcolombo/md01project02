@@ -1,33 +1,29 @@
 import React from 'react';
 import './style.css';
 import Header from '../../components/Header';
+import {useEffect, useState} from 'react';
 
 import {MapContainer,TileLayer, Marker, Popup } from 'react-leaflet';
-    
-    const COMPANIES = [
-    {
-        id: 1,
-        name: 'Empresa X',
-        coordinates: [51.505,-0.09]
-    },
-    {
-        id: 2,
-        name: 'Empresa Y',
-        coordinates: [11.505,-0.09]
-    },
-    {
-        id: 3,
-        name: 'Empresa XYTE',
-        coordinates: [13.505,-0.09]
-    },
-    {
-        id: 4,
-        name: 'Empresa Z',
-        coordinates: [12.505,-0.09]
-    }
-    ]
 
 const Map = () => {
+
+    const [companiesList, setCompaniesList] = useState([]);
+
+    useEffect(() => {
+        async function handleGetCompanies() {
+            try {
+                const response = await fetch("http://localhost:3333/empresas");
+                const data = await response.json();
+
+                setCompaniesList(data);
+
+            } catch (error) {
+                alert('Houve um erro ao tentar listar as Empresas! Entre em contato com suporte!')
+            }
+        }
+        handleGetCompanies();
+    }, []);
+
     return(
         <div className='content-map'>
             <Header/>
@@ -39,10 +35,10 @@ const Map = () => {
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
             {
-                COMPANIES.map(item => (
-                <Marker position={item.coordinates}>
+                companiesList.map((company) => (
+                <Marker position={[company.latitude , company.longitude]}>
                     <Popup>
-                        <p>Nome: {item.name}</p>
+                        <p>Nome: {company.corporateName}</p>
                     </Popup>
                 </Marker>
                 ))

@@ -21,7 +21,7 @@
     {
       "corporateName": "Empresa A",
       "tradeName": "Empresa a",
-      "cnpj": "12.345.789/0001-10",
+      "cnpj": "123.456.789",
       "email": "empresa@a.com.br",
       "cep": "12.344-000",
       "address": "Rua Empresa A",
@@ -29,8 +29,8 @@
       "district": "Bairro A",
       "city": "Cidade A",
       "complement": "",
-      "latitude": "-28",
-      "longitude": "-49",
+      "latitude": "1",
+      "longitude": "2",
       "id": 1
     }
   ],
