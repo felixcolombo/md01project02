@@ -16,18 +16,24 @@
   "profile": {
     "name": "typicode"
   },
-  "produtos": [
+  "produtos": [],
+  "empresas": [
     {
-      "url": "ww",
-      "productName": "ww",
-      "unitCost": "22",
-      "description": "232",
-      "provider": "Del valle",
-      "group": "Ovos",
+      "corporateName": "Empresa A",
+      "tradeName": "Empresa a",
+      "cnpj": "12.345.789/0001-10",
+      "email": "empresa@a.com.br",
+      "cep": "12.344-000",
+      "address": "Rua Empresa A",
+      "number": "1",
+      "district": "Bairro A",
+      "city": "Cidade A",
+      "complement": "",
+      "latitude": "-28",
+      "longitude": "-49",
       "id": 1
     }
   ],
-  "empresas": [],
   "fornecedores": [
     "Del valle",
     "Amazon",

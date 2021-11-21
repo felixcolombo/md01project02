@@ -1,12 +1,23 @@
+.content-map{
+  border: 2px solid rgb(109, 156, 152);
+  width: 602px;
+  height: 630px;
+  margin: auto;
+  border-bottom: 5px solid rgb(109, 156, 152);
+  
+}
+
 .leaflet-container{
-    width: 100%;
+    width: 602px;
     height: 50vh;
     margin: center;
   
   }
   
   .container-map{
-    width: 50%;
-    margin: center;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
     
   }

@@ -3,6 +3,7 @@ import './style.css';
 import Header from '../../components/Header';
 
 import {MapContainer,TileLayer, Marker, Popup } from 'react-leaflet';
+    
     const COMPANIES = [
     {
         id: 1,
@@ -28,11 +29,11 @@ import {MapContainer,TileLayer, Marker, Popup } from 'react-leaflet';
 
 const Map = () => {
     return(
-        <>
+        <div className='content-map'>
             <Header/>
 
             <div className='container-map'>
-                <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={true}>
+                <MapContainer center={[51.505, -0.09]} zoom={1} scrollWheelZoom={true}>
                 <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -48,7 +49,7 @@ const Map = () => {
             }
                 </MapContainer>
             </div>
-        </>
+        </div>
     );
 };
 
