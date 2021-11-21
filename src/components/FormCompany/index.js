@@ -108,7 +108,7 @@ const FormCompany = (props) => {
 
                 <div className='container-formCompany'> 
 
-                    <div className='container-name'>
+                    <div className='container-nameCompany'>
                         <div className='container-corporate'> 
                             <label>Razão Social</label>
                             <input

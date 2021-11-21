@@ -1,10 +1,140 @@
 .container-formProduct{
-    border: 1px solid rgb(170, 205, 206);
     width: 580px;
+    margin-top: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    height: 445px;
+    overflow: auto;
+    
+}
+
+.container-formProduct input:focus{
+    outline: 0;
+    border-color: rgb(12, 64, 66);
+    background-color: rgb(224, 247, 247);
+}
+
+.container-formProduct label{
+    font-size: 18px;
+}
+
+.container-formProduct input{
+    height: 20px;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.container-formProduct textarea{
+    resize: none;
+    padding: 5px;
+}
+
+.container-formProduct textarea:focus{
+    outline: 0;
+    border-color: rgb(12, 64, 66);
+    background-color: rgb(224, 247, 247);
+}
+
+.container-imgProduct{
+    display: flex;
     margin: auto;
+    justify-content: center;
 }
 
 .img-Product{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
+    
+}
+
+.container-urlImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+ 
+}
+
+.container-urlImg input{
+    width: 550px
+}
+
+.container-name-cost{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    
+}
+
+.container-nameProduct{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-cost{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-nameProduct input{
+    width: 360px;
+}
+
+.container-cost input{
+    width: 140px;
+}
+
+.container-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(95, 171, 173);
+    
+}
+
+.container-description{
+    width: 561px;
+    
+}
+
+.container-formProduct select{
+    height: 30px;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.container-formProduct select:focus{
+    outline: 0;
+    border-color: rgb(12, 64, 66);
+    background-color: rgb(224, 247, 247);
+}
+
+.container-provider-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(95, 171, 173);
+    
+}
+
+.container-provider-group select{
+    width: 260px;
+    
+}
+
+.container-provider{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-group{
+    display: flex;
+    flex-direction: column;
 }

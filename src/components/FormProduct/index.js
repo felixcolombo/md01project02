@@ -107,10 +107,9 @@ const FormProduct = (props) => {
                 
                 <SubHeader title='Novo Produto'/>
 
-                    <div className='container-formProduct'>
+                <div className='container-formProduct'>
                         
                     <div className='container-imgProduct'> 
-                        
                         {url && (
                             <img className='img-Product'
                             src={url}
@@ -119,8 +118,8 @@ const FormProduct = (props) => {
                         )}
                     </div>
                     
-                    <label>
-                        URL da Imagem:
+                    <div className='container-urlImg'>
+                        <label>URL da Imagem</label>
                         <input
                             type='text'
                             name="url"
@@ -128,74 +127,77 @@ const FormProduct = (props) => {
                             onChange={(e) => setUrl(e.target.value)}
                             placeholder='https://...'
                         />
-                    </label>
-
-                    <label>
-                        Nome:
-                        <input
-                            type='text'
-                            name='productName'
-                            value={productName}
-                            onChange={(e) => setProductName(e.target.value)}
-                            placeholder='Nome do Produto'
-                                
-                        />
-                    </label>
-
-                    <label>
-                        Custo Unitário:
-                        <input
-                            type='number'
-                            name='unitCost'
-                            value={unitCost}
-                            onChange={(e) => setUnitCost(e.target.value)}
-                            placeholder='Custo Unitário'
-                                
-                        />
-                    </label>
-
-                    <label>
-                        Descrição:
+                    </div>
+                    
+                    <div className='container-name-cost'>
+                        
+                        <div className='container-nameProduct'>
+                            <label>Nome</label>
+                            <input
+                                type='text'
+                                name='productName'
+                                value={productName}
+                                onChange={(e) => setProductName(e.target.value)}
+                                placeholder='Nome do Produto'
+                            />
+                        </div>
+                        <div className='container-cost'>
+                            <label>Custo Unitário</label>
+                            <input
+                                type='number'
+                                name='unitCost'
+                                value={unitCost}
+                                onChange={(e) => setUnitCost(e.target.value)}
+                                placeholder='Custo Unitário'
+                                    
+                            />
+                        </div>
+                    </div>
+                    
+                    <div className='container-description'>
+                        <label>Descrição</label>
                         <textarea
-                            rows={3}
+                            rows={5}
                             value={description}
                             onChange={(e) => setDescription(e.target.value)}
                             placeholder='Descrição do Produto...'
                                 
                         />
-                    </label>
-
-                    <label>
-                        Fornecedores:
-                        <select
-                            name="provider"
-                            value={provider}
-                            onChange={(e) => setProvider(e.target.value)}
-                        >
-                            <option value="" selected disabled>
-                                Selecione..
-                            </option>
-                            {providers.map((provider) => (
-                                <option value={provider}>{provider}</option>
-                            ))}
-                        </select>
-                    </label>
-
-                    <label>
-                        Grupo:
-                        <select
-                            name="group"
-                            value={group}
-                            onChange={(e) => setGroup(e.target.value)}
-                        >
-                            <option value="" selected disabled>
-                                Selecione..
-                            </option>
-                            {groups.map((group) => (
-                                <option value={group}>{group}</option>
-                            ))}
-                        </select>
-                    </label>
+                    </div>
+                    
+                    <div className='container-provider-group'>
+                        <div className='container-provider'>
+                            <label>Fornecedor</label>
+                            <select
+                                name="provider"
+                                value={provider}
+                                onChange={(e) => setProvider(e.target.value)}
+                            >
+                                <option value="" selected disabled>
+                                    Selecione..
+                                </option>
+                                {providers.map((provider) => (
+                                    <option value={provider}>{provider}</option>
+                                ))}
+                            </select>
+                        </div>
+                        
+                        <div className='container-group'>
+                            <label>Grupo</label>
+                            <select
+                                name="group"
+                                value={group}
+                                onChange={(e) => setGroup(e.target.value)}
+                            >
+                                <option value="" selected disabled>
+                                    Selecione..
+                                </option>
+                                {groups.map((group) => (
+                                    <option value={group}>{group}</option>
+                                ))}
+                            </select>
+                        </div>
+                    </div>
                 </div>
         </form>
     </>   
