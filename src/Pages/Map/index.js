@@ -39,6 +39,10 @@ const Map = () => {
                 <Marker position={[company.latitude , company.longitude]}>
                     <Popup>
                         <p>Nome: {company.corporateName}</p>
+                        <p>Endereço: {company.address}</p>
+                        <p>Número: {company.number}</p>
+                        <p>CEP: {company.cep}</p>
+
                     </Popup>
                 </Marker>
                 ))
